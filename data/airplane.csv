@@ -2,3 +2,4 @@ Model,C_dp,mass,Wing span,Wing area,thrust total (kN),Mach cruise
 Airbus A320-200,0.0233,73500,34.1,122.4,240,0.81
 Boeing 737-800,0.0245,70535,34.32,124.6,242,0.785
 Embraer E195,0.028,52290,28.72,92.53,178,0.82 
+
