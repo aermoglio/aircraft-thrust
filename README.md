@@ -16,7 +16,27 @@ $C_D=C_{Di}+C_{Dp}$, where $C_{Di}$ is induced drag coefficient and $C_{Dp}$ is 
 
 $C_{Di}$ can be related to the lift coefficient $C_L$:
 
-$C_{Di}=\frac{C_L^2}{\pi A R e}$
+$C_{Di}=\frac{C_L^2}{\pi A R e}$, where $AR$ is the wing aspect ratio (wingspan^2/wingarea), and $e$ is efficiency. 
+
+The equation for drag is:
+
+$D=\frac{1}{2} \rho V^2 S C_D = \frac{1}{2} \rho V^2 S (C_{Dp}+\frac{C_L^2}{\pi A R e})$,
+
+where $\rho$ is air density (dependent on temperature and altitude) and $S$ is wing reference area.
+
+As mentioned before, for flight to be level at a constant speed, forces must be balanced. Therefore, the thrust required for level flight is:
+
+$T_R=\frac{1}{2} \rho V^2 S (C_{Dp}+\frac{C_L^2}{\pi A R e})$.
+
+Since in this instance $L=W$, the lift coefficient is given by:
+
+$C_L=\frac{2L}{\rho V^2 S}=\frac{2W}{\rho V^2 S}.
+
+Combining all equations, we obtain the final expression for thrust required:
+
+$T_R=\frac{1}{2} \rho V^2 S (C_{Dp}+\frac{4W^2}{\pi \rho^2 V^4 S^2 A R e})$
+
+One final important factor to consider in this programme is the change in air density with altitude
 
 ## Learning outcomes
 
