@@ -2,3 +2,17 @@
 
 As a physics students, flight dynamics are not commonly taught as part of the course, so I decided to create a programme on Python to help me understand some of the basics, such as the concept of thrust required for level flight. I investigated this at different flight altitudes, and compared how minimum drag airspeed compares to the level flight mach for three different aircrafts: Airbus A320-200, Boeing 737-800, and Embraer E195.
 
+## Background Information
+
+For level flight at a constant speed,
+
+$T=D$ and $L=W$, where T is thrust, D is drag, L is lift, and W is weight.
+
+There are two contributions to the overall drag $D$: the parasite drag and the induced drag. The parasaite drag is a result of friction, and the aircraft's shape. It increases proportioal to $V^2$ (square of aircraft speed). This is what one normally thinks of when thinking of drag. As for induced drag, this occurs from the creation of lift (formation of vortices around wing tip). These vortices result in a downward deflection of airflow, which tilts the lift vector backward and produces a drag component.
+
+## Learning outcomes
+
+
+## Some results
+
+## Skills used
