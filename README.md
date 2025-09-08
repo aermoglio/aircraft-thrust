@@ -41,8 +41,8 @@ One final important factor to consider in this programme is the change in air de
 $$
 \rho(h) =
 \begin{cases}
-  \rho_0(1-\frac{Lh}{T_0})^{\frac{g}{RL} -1} & \text{if } h < 11000, \\
-  \rho_{11} \exp{\frac{-g(h-h_{11})}{RT_{11}}  & \text{if } 11000 < h < 20000
+\rho_0 \left(1 - \frac{L h}{T_0}\right)^{\frac{g}{R L} - 1} & \text{if } h < 11000, \\
+\rho_{11} \exp\left(\frac{-g (h - h_{11})}{R T_{11}}\right) & \text{if } 11000 \le h < 20000
 \end{cases}
 $$
 
