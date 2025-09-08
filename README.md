@@ -46,11 +46,24 @@ $$
 \end{cases}
 $$
 
-The temperature at {h=11000} is given by $T_{11}=T_0-Lh_{11}$
+The temperature at $h=11000$ m is given by $T_{11}=T_0-Lh_{11}$
 
 ## Learning outcomes
-
+- Understand the difference between induced drag and parasite drag.
+- Understand the role of coefficients in flight dynamics
+- Observe how altitude affects forces in flight
+- Compare cruise Mach and minimum drag speed
 
 ## Some results
+
+![Wing load for different models](images/wingload.png)
+
+![Thrust required vs velocity for Airbus aircraft](images/airbus1.png)
+
+![Minimum drag speed vs height](images/min_dragv_vs_h.png)
+
+![Thrust required vs speed(in Mach), with labeled cruise Mach](images/boeing_mach.png)
+
+![Thrust required vs speed(in Mach), with labeled cruise Mach](images/mach_vs_mindragvpng.png)
 
 ## Skills used
