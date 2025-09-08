@@ -54,16 +54,36 @@ The temperature at $h=11000$ m is given by $T_{11}=T_0-Lh_{11}$
 - Observe how altitude affects forces in flight
 - Compare cruise Mach and minimum drag speed
 
+## Important assumptions
+
+The programme assumed that the weight of the aircraft remains constant throughout the flight, which is not true in a real world context. This is because fuel is consumed during take-off and during the flight, resulting in a decrease in mass and therefore a decrease in weight. As a result, the coefficient of lift used in the programme is an overestimate, which means that drag is lower and thus thrust required is lower overall. 
+
+The model also assumed a constant cruise mach for all heights. 
+
 ## Some results
 
 ![Wing load for different models](images/wingload.png)
 
+Figure 1. The plot above shows wing load for each aircraft model. A higher wing loading corresponds to each square meter of the wing producing more lift, which means that the aircraft must fly faster to generate enough lift. For a lower wing load, the aircraft can generate lift as lower speeds. Out of all models considered, the Embraer model has the lowers wing load, while Airbus has the greatest one. 
+
 ![Thrust required vs velocity for Airbus aircraft](images/airbus1.png)
+
+Figure 2. Thrust required vs airspeed for Airbus model for different altitudes. The graph shows a U-shaped curve, created as a result of the contributions of parasite drag (proportional to square of speed) and induced drag (inversely proportional to square of speed). For all heights, the trend shows that high values of thrust are required for level flight at low speeds. The minimum thrust value of this U-shape indicated the minimum-drag speed, which is the speed at which the aircraft experiences the lowest amount of drag. This was repeated for all models. 
 
 ![Minimum drag speed vs height](images/min_dragv_vs_h.png)
 
+Figure 3. Minimum drag speed vs height for all aircrafts, with exponential fit. As altitude increases, the minimum drag speed also increases. This increase is exponential, as shown by the fit which was created using scipy.optimize. As observed from the figure, Embraer has overall lower minimum drag speeds compared to the other two models.
+
 ![Thrust required vs speed(in Mach), with labeled cruise Mach](images/boeing_mach.png)
+
+Figure 4. Thrust required vs speed (in Mach), with labeled cruise Mach for Boeing. Speed is converted to Mach units by dividing the airpseed by the speed of sound at a given altitude. The graph shows how minimum drag speed is not equivalent to cruise mach at any point, which means that planes
 
 ![Thrust required vs speed(in Mach), with labeled cruise Mach](images/mach_vs_mindragvpng.png)
 
 ## Skills used
+- Dictionaries for data storage
+- Scipy
+- Numpy
+- Matplotlib
+- Functions
+- Loops to reduce redundancy
