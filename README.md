@@ -20,13 +20,13 @@ $C_{Di}=\frac{C_L^2}{\pi A R e}$, where $AR$ is the wing aspect ratio (wingspan^
 
 The equation for drag is:
 
-$D=\frac{1}{2} \rho V^2 S C_D = \frac{1}{2} \rho V^2 S (C_{Dp}+\frac{C_L^2}{\pi A R e})$,
+$$D=\frac{1}{2} \rho V^2 S C_D = \frac{1}{2} \rho V^2 S (C_{Dp}+\frac{C_L^2}{\pi A R e})$$,
 
 where $\rho$ is air density (dependent on temperature and altitude) and $S$ is wing reference area.
 
 As mentioned before, for flight to be level at a constant speed, forces must be balanced. Therefore, the thrust required for level flight is:
 
-$T_R=\frac{1}{2} \rho V^2 S (C_{Dp}+\frac{C_L^2}{\pi A R e})$.
+$$T_R=\frac{1}{2} \rho V^2 S (C_{Dp}+\frac{C_L^2}{\pi A R e})$$.
 
 Since in this instance $L=W$, the lift coefficient is given by:
 
@@ -34,17 +34,19 @@ $C_L=\frac{2L}{\rho V^2 S}=\frac{2W}{\rho V^2 S}$.
 
 Combining all equations, we obtain the final expression for thrust required:
 
-$T_R=\frac{1}{2} \rho V^2 S (C_{Dp}+\frac{4W^2}{\pi \rho^2 V^4 S^2 A R e})$
+$$T_R=\frac{1}{2} \rho V^2 S (C_{Dp}+\frac{4W^2}{\pi \rho^2 V^4 S^2 A R e})$$
 
 One final important factor to consider in this programme is the change in air density with altitude. The altitudes above sea level considered were 5000 m, 8000 m, 11000 m, 15000 m, and 18000m. Thus, the air density was written as a piecewise function:
 
 $$
-f(x) =
+\rho(h) =
 \begin{cases}
-  x^2 & \text{if } x \geq 0, \\
-  -x  & \text{if } x < 0
+  \rho_0(1-\frac{Lh}{T_0})^{\frac{g}{RL} -1} & \text{if } h < 11000, \\
+  \rho_{11} \exp{\frac{-g(h-h_{11})}{RT_{11}}  & \text{if } 11000 < h < 20000
 \end{cases}
 $$
+
+The temperature at {h=11000} is given by $T_{11}=T_0-Lh_{11}$
 
 ## Learning outcomes
 
