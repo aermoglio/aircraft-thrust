@@ -8,7 +8,15 @@ For level flight at a constant speed,
 
 $T=D$ and $L=W$, where T is thrust, D is drag, L is lift, and W is weight.
 
-There are two contributions to the overall drag $D$: the parasite drag and the induced drag. The parasaite drag is a result of friction, and the aircraft's shape. It increases proportioal to $V^2$ (square of aircraft speed). This is what one normally thinks of when thinking of drag. As for induced drag, this occurs from the creation of lift (formation of vortices around wing tip). These vortices result in a downward deflection of airflow, which tilts the lift vector backward and produces a drag component.
+There are two contributions to the overall drag $D$: the parasite drag and the induced drag. The parasaite drag is a result of friction, and the aircraft's shape. It increases proportioal to $V^2$ (square of aircraft speed). This is what one normally thinks of when thinking of drag. As for induced drag, this occurs from the creation of lift (formation of vortices around wing tip). These vortices result in a downward deflection of airflow, which tilts the lift vector backward and produces a drag component. Contrary to parasite drag, induced drag is proportional to $\frac{1}{V^2}$.
+
+The drag coefficient encompasses both types of drag. A lot of the geometry of the plane does not need to be considered as these details are encapsulated within the coefficients. The resulting drag coefficient becomes:
+
+${C_D=C_{Di}+C_{Dp}$, where $C_{Di}$ is induced drag coefficient and $C_{Dp}$ is the parasite drag coefficient.
+
+$C_{Di}$ can be related to the lift coefficient $C_L$:
+
+$C_{Di}=\frac{C_L^2}{\pi A R e}$
 
 ## Learning outcomes
 
