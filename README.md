@@ -30,13 +30,21 @@ $T_R=\frac{1}{2} \rho V^2 S (C_{Dp}+\frac{C_L^2}{\pi A R e})$.
 
 Since in this instance $L=W$, the lift coefficient is given by:
 
-$C_L=\frac{2L}{\rho V^2 S}=\frac{2W}{\rho V^2 S}.
+$C_L=\frac{2L}{\rho V^2 S}=\frac{2W}{\rho V^2 S}$.
 
 Combining all equations, we obtain the final expression for thrust required:
 
 $T_R=\frac{1}{2} \rho V^2 S (C_{Dp}+\frac{4W^2}{\pi \rho^2 V^4 S^2 A R e})$
 
-One final important factor to consider in this programme is the change in air density with altitude
+One final important factor to consider in this programme is the change in air density with altitude. The altitudes above sea level considered were 5000 m, 8000 m, 11000 m, 15000 m, and 18000m. Thus, the air density was written as a piecewise function:
+
+$$
+f(x) =
+\begin{cases}
+  x^2 & \text{if } x \geq 0, \\
+  -x  & \text{if } x < 0
+\end{cases}
+$$
 
 ## Learning outcomes
 
