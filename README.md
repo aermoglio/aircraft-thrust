@@ -12,7 +12,7 @@ There are two contributions to the overall drag $D$: the parasite drag and the i
 
 The drag coefficient encompasses both types of drag. A lot of the geometry of the plane does not need to be considered as these details are encapsulated within the coefficients. The resulting drag coefficient becomes:
 
-${C_D=C_{Di}+C_{Dp}$, where $C_{Di}$ is induced drag coefficient and $C_{Dp}$ is the parasite drag coefficient.
+$C_D=C_{Di}+C_{Dp}$, where $C_{Di}$ is induced drag coefficient and $C_{Dp}$ is the parasite drag coefficient.
 
 $C_{Di}$ can be related to the lift coefficient $C_L$:
 
